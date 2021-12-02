@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:scrollbarTrackVertical="@color/white"
+    tools:context=".Giris">
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="287dp"
+        android:layout_height="302dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/ic_baseline_mic_24"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/mbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+    <Button
+        android:id="@+id/mbutton"
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/popup"
+        android:text="GİT"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="..."
+        android:inputType="textPersonName"
+        android:scrollbarTrackHorizontal="@drawable/buttonarkaplan"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
+</android.support.constraint.ConstraintLayout>
+

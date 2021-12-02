@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/b"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.sayefreyadh.androidmapsnearby.MapsActivity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button_nearby_layout" />
+
+    <LinearLayout
+        android:id="@+id/button_nearby_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="InvalidId">
+
+        <Button
+            android:id="@+id/nearby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/location_text_field"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/popup"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Yakınımdaki Yerler" />
+
+    </LinearLayout>
+</RelativeLayout>
+
